@@ -14,10 +14,14 @@ def factorial(n):
     if n < 0:
         raise ValueError("Factorial is not defined for negative numbers.")
     
-    # Initialize the result variable to store the factorial value    
+    # Initialize the result variable to store the factorial value  
+    result = 1  
     # Iterate through numbers from 1 to n (inclusive)
-
+    for i in range(1, n+1):
+        result *= i
     # Write your code here
+    
+        
     
 
     # Return the calculated factorial value
